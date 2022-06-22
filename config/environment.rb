@@ -4,7 +4,7 @@ ENV['RACK_ENV'] ||= "development"
 
 # Require in Gems
 require 'bundler/setup'
-Bundler.require(-5000, ENV['RACK_ENV'])
+Bundler.require(5000, ENV['RACK_ENV'])
 
 # Require in all files in 'app' directory
 require_all 'app'
