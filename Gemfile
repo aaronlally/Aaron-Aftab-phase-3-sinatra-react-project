@@ -3,6 +3,7 @@ source "https://rubygems.org"
 # A DSL for quickly creating web applications
 # https://github.com/sinatra/sinatra
 gem "sinatra", "~> 2.1"
+gem "ruby", "~> 3.1.0"
 
 # A fast and simple web server
 # https://github.com/macournoyer/thin
