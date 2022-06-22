@@ -2,6 +2,9 @@ class ApplicationController < Sinatra::Base
   set :default_content_type, 'application/json'
   
   # Add your routes here
+  get "/" do
+    puts "you are home"
+  end
   get "/books" do
     books = Book.all
     books.to_json
