@@ -3,6 +3,7 @@ class Author < ActiveRecord::Base
 
     def self.alphabetical_order
         self.order(:name)
+        puts "hello"
     end
 
     def self.order_by_birth_year
