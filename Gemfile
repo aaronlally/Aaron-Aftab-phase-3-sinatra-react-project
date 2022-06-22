@@ -34,7 +34,7 @@ gem "require_all", "~> 3.0"
 # Used to generate seed data
 # https://github.com/faker-ruby/faker
 gem "faker", "~> 2.18"
-gem "pg"
+gem "pg", "~> 1.4.0"
 
 # These gems will only be used when we are running the application locally
 group :development do
