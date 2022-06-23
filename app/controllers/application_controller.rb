@@ -5,6 +5,17 @@ class ApplicationController < Sinatra::Base
   get "/" do
     puts "you are home"
   end
+
+  post "/auth" do
+    user = Author.find_by(email: params[:email])
+    if user
+      user.to_json
+    else
+      newUser = Author.create(name: params[:name], email: params[:email], birth_year: rand(1895..2015))
+      newUser.to_json
+    end
+  end
+
   get "/books" do
     books = Book.all
     books.to_json

@@ -2,7 +2,8 @@ puts "🌱 Seeding spices..."
 
 # Seed your database here
 10.times do
-Author.create(name: Faker::Name.name, birth_year: rand(1895..2015))
+    name = Faker::Name.name
+    Author.create(name: name, birth_year: rand(1895..2015), email: "#{name.gsub(/\s+/, "")}@books.com")
 end
 
 Author.all.each do |author|

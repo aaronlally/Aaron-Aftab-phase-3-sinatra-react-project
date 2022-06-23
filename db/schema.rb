@@ -15,6 +15,7 @@ ActiveRecord::Schema.define(version: 2022_06_22_140746) do
   create_table "authors", force: :cascade do |t|
     t.string "name"
     t.integer "birth_year"
+    t.string "email"
   end
 
   create_table "books", force: :cascade do |t|
