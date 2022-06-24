@@ -53,12 +53,4 @@ class ApplicationController < Sinatra::Base
     authors.to_json
   end
 
-  post "/add_author" do
-    author = Author.create(
-      name: params[:name],
-      birth_year: params[:birth_year]
-    )
-    author.to_json
-  end
-
 end
